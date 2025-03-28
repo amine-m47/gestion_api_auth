@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Activer la réécriture d'URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rediriger /auth vers authapi.php
+RewriteRule ^auth$ authapi.php [L]
