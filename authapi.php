@@ -47,7 +47,7 @@ try {
     }
 
     // Création du token JWT
-    $secret_key = "cle_secrete"; // Remplace par ta vraie clé secrète
+    $secret_key = "iutinfo"; // Remplace par ta vraie clé secrète
     $headers = ["alg" => "HS256", "typ" => "JWT"];
     $payload = [
         "user_id" => $user['id'],
